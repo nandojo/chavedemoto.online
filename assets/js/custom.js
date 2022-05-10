@@ -16,36 +16,36 @@ jQuery(document).ready(function ($) {
 	$(window).imagesLoaded(function () {
 		wow.init();
 	});
-	/* Menu Mobile */
-	var $menu_show = $('.mobile-toggle'),
-		$menu = $('header #menu-main'),
-		$list = $("ul.nav-menu li a"),
-		$menu_list = $('header li.has-dropdown'),
-		$menu_ul = $('ul.sub-menu'),
-		$cart_model = $('.cart-model'),
-		$cart_link = $('#cart-link'),
-		$search_bar = $('#search_bar'),
-		$search_close = $('.close-search'),
-		$search_bot = $('#search-header'),
-		$fixed_header = $('#fixed-header'),
-		$fixed_header_dark = $('#fixed-header-dark'),
-		$sticky_content = $('.sticky-content'),
-		$sticky_sidebar = $('.sticky-sidebar');
+//	/* Menu Mobile */
+//	var $menu_show = $('.mobile-toggle'),
+//		$menu = $('header #menu-main'),
+//		$list = $("ul.nav-menu li a"),
+//		$menu_list = $('header li.has-dropdown'),
+//		$menu_ul = $('ul.sub-menu'),
+//		$cart_model = $('.cart-model'),
+//		$cart_link = $('#cart-link'),
+//		$search_bar = $('#search_bar'),
+//		$search_close = $('.close-search'),
+//		$search_bot = $('#search-header'),
+//		$fixed_header = $('#fixed-header'),
+//		$fixed_header_dark = $('#fixed-header-dark'),
+//		$sticky_content = $('.sticky-content'),
+//		$sticky_sidebar = $('.sticky-sidebar');
 
 	// var list = $("ul.nav-menu li  a"); //Liste de tout les liens
 	//Gestion du clique sur le boutton des trois bars afin d'afficher le menu dans les support avec un width <769
-	$menu_show.on("click", function (e) {
-		$menu.slideToggle();
-	});
-	//Gestion des cliques sur les liens avec élimination du comportement par défaut du a dans le cas où il existe un sous menu
-	$list.on("click", function (e) {
-		var submenu = this.parentNode.getElementsByTagName("ul").item(0);
-		//S'il existe un sous menu sinon c'est un lien terminal
-		if (submenu != null) {
-			event.preventDefault();
-			$(submenu).slideToggle();
-		}
-	});
+//	$menu_show.on("click", function (e) {
+//		$menu.slideToggle();
+//	});
+//	//Gestion des cliques sur les liens avec élimination du comportement par défaut du a dans le cas où il existe un sous menu
+//	$list.on("click", function (e) {
+//		var submenu = this.parentNode.getElementsByTagName("ul").item(0);
+//		//S'il existe un sous menu sinon c'est un lien terminal
+//		if (submenu != null) {
+//			event.preventDefault();
+//			$(submenu).slideToggle();
+//		}
+//	});
 
 	//Gestion du resize de la fenetre pour eliminer le style ajouté par la méthode .slideToggle()
 	$(window).on("resize", function (e) {
@@ -56,28 +56,28 @@ jQuery(document).ready(function ($) {
 	});
 
 
-	/* Cart */
-	$cart_link.on("click", function (e) {
-		$cart_model.slideToggle("fast");
-	});
+//	/* Cart */
+//	$cart_link.on("click", function (e) {
+//		$cart_model.slideToggle("fast");
+//	});
+//
+//	$(window).on("click", function (e) {
+//		$cart_model.hide("fast");
+//	});
+//	$cart_link.on("click", function (e) {
+//		event.stopPropagation();
+//	});
+//	/* Cart */
 
-	$(window).on("click", function (e) {
-		$cart_model.hide("fast");
-	});
-	$cart_link.on("click", function (e) {
-		event.stopPropagation();
-	});
-	/* Cart */
 
-
-	/* Search */
-	$search_bot.on("click", function (e) {
-		$search_bar.slideToggle("fast");
-	});
-
-	$search_close.on("click", function (e) {
-		$search_bar.hide("fast");
-	});
+//	/* Search */
+//	$search_bot.on("click", function (e) {
+//		$search_bar.slideToggle("fast");
+//	});
+//
+//	$search_close.on("click", function (e) {
+//		$search_bar.hide("fast");
+//	});
 
 
 	/* owl Slider  */
@@ -105,7 +105,7 @@ jQuery(document).ready(function ($) {
 	});
 
 	/* Tooltip  */
-	$('[data-toggle="tooltip"]').tooltip()
+//	$('[data-toggle="tooltip"]').tooltip()
 
 
 	/* Light Box */
@@ -117,27 +117,27 @@ jQuery(document).ready(function ($) {
 
 
 	/*  $fixed_header */
-	$(window).on("scroll", function (e) {
-		if ($(window).scrollTop() >= 300) {
-			$fixed_header.addClass('fixed-header');
-			$fixed_header_dark.addClass('fixed-header-dark');
-		} else {
-			$fixed_header.removeClass('fixed-header');
-			$fixed_header_dark.removeClass('fixed-header-dark');
-		}
-	});
+//	$(window).on("scroll", function (e) {
+//		if ($(window).scrollTop() >= 300) {
+//			$fixed_header.addClass('fixed-header');
+//			$fixed_header_dark.addClass('fixed-header-dark');
+//		} else {
+//			$fixed_header.removeClass('fixed-header');
+//			$fixed_header_dark.removeClass('fixed-header-dark');
+//		}
+//	});
 
 
 	/**************
 	 Sticky Sidebar 
 	**************/
 
-	$sticky_content.theiaStickySidebar({
-		additionalMarginTop: 30
-	});
-	$sticky_sidebar.theiaStickySidebar({
-		additionalMarginTop: 30
-	});
+//	$sticky_content.theiaStickySidebar({
+//		additionalMarginTop: 30
+//	});
+//	$sticky_sidebar.theiaStickySidebar({
+//		additionalMarginTop: 30
+//	});
 
 
 
